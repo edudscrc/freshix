@@ -1,0 +1,21 @@
+{
+  "name": "freshix",
+  "displayName": "Freshix",
+  "description": "Blueish theme inspired by Boreal Valley",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Freshix",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Freshix-color-theme.json"
+      }
+    ]
+  }
+}
