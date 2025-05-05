@@ -1,0 +1,1 @@
+ln -sfn ~/Documents/freshix/ ~/.vscode/extensions/freshix

@@ -114,7 +114,7 @@
       "name": "Variables",
       "scope": ["variable", "string constant.other.placeholder"],
       "settings": {
-        "foreground": "#3a5e83"
+        "foreground": "#4e6a89"
       }
     },
     // ========== COLORS ==========
@@ -248,7 +248,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#3b4c63"
+        "foreground": "#3a5e83"
       }
     },
     {
@@ -362,7 +362,7 @@
       "name": "Changed",
       "scope": ["markup.changed"],
       "settings": {
-        "foreground": "#3b4c63"
+        "foreground": "#3a5e83"
       }
     },
     // ========== REGEX, ESCAPES ==========
@@ -677,7 +677,7 @@
         "meta.class.cpp"
       ],
       "settings": {
-        "foreground": "#3b4c63"
+        "foreground": "#3a5e83"
       }
     },
     {
@@ -750,7 +750,7 @@
       "name": "Python Class",
       "scope": ["meta.class.python", "entity.name.type.class.python"],
       "settings": {
-        "foreground": "#3b4c63"
+        "foreground": "#3a5e83"
       }
     },
     {
@@ -858,7 +858,7 @@
       "name": "Python Special Variables (__name__, __file__, etc.)",
       "scope": ["variable.language.special.python"],
       "settings": {
-        "foreground": "#3a5e83"
+        "foreground": "#4e6a89"
       }
     },
     {
@@ -869,7 +869,7 @@
         "meta.function.parameters.python"
       ],
       "settings": {
-        "foreground": "#3a5e83"
+        "foreground": "#4e6a89"
       }
     },
     {
@@ -891,7 +891,7 @@
         "punctuation.section.interpolation.end.python"
       ],
       "settings": {
-        "foreground": "#F0C75E"
+        "foreground": "#d29d72"
       }
     },
     {
@@ -908,14 +908,14 @@
       "name": "Python Comments",
       "scope": ["comment.line.number-sign.python"],
       "settings": {
-        "foreground": "#6E687A"
+        "foreground": "#5c6470"
       }
     },
     {
       "name": "Python Source",
       "scope": ["source.python"],
       "settings": {
-        "foreground": "#3a5e83"
+        "foreground": "#4e6a89"
       }
     }
   ]
