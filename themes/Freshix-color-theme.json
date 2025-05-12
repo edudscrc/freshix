@@ -95,7 +95,7 @@
     "textLink.foreground": "#6b90ad",
     "textLink.activeForeground": "#a5c6d4",
     // ========== SELECTION ==========
-    "editor.selectionBackground": "#252b37",
+    "editor.selectionBackground": "#747983",
     // ========== PANELS ==========
     "panel.border": "#252b37"
   },
@@ -747,175 +747,100 @@
     },
     // ========== PYTHON-SPECIFIC SCOPES ==========
     {
-      "name": "Python Class",
-      "scope": ["meta.class.python", "entity.name.type.class.python"],
-      "settings": {
-        "foreground": "#3a5e83"
-      }
-    },
-    {
-      "name": "Python Function Definition",
-      "scope": ["meta.function.python", "entity.name.function.python"],
-      "settings": {
-        "foreground": "#8fa99c"
-      }
-    },
-    {
-      "name": "Python Function Call",
+      "name": "Python Keywords (Control Flow)",
       "scope": [
-        "meta.function-call.python",
-        "entity.name.function.call.python"
+        "keyword.control.flow.python",
+        "keyword.control.import.python",
+        "keyword.control.async.python"
       ],
       "settings": {
-        "foreground": "#8fa99c"
+        "foreground": "#b1535e",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Python Function Arguments",
-      "scope": ["meta.function-call.arguments.python"],
+      "name": "Python Function Declarations",
+      "scope": "entity.name.function.python",
       "settings": {
-        "foreground": "#b1535e"
+        "foreground": "#DCDCAA"
       }
     },
     {
-      "name": "Python Built-in Functions",
-      "scope": ["support.function.builtin.python"],
+      "name": "Python Class Names",
+      "scope": "entity.name.type.class.python",
       "settings": {
-        "foreground": "#b1535e"
+        "foreground": "#4EC9B0",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "Python Built-in Types",
-      "scope": ["support.type.builtin.python"],
+      "name": "Python Strings",
+      "scope": "string.quoted.python",
       "settings": {
-        "foreground": "#a5c6d4"
+        "foreground": "#CE9178"
       }
     },
     {
-      "name": "Python Built-in Constants (True, False, None)",
-      "scope": ["constant.language.python", "support.constant.python"],
-      "settings": {
-        "foreground": "#a5c6d4"
-      }
-    },
-    {
-      "name": "Python Built-in Exceptions",
-      "scope": ["support.type.exception.python"],
-      "settings": {
-        "foreground": "#d29d72"
-      }
-    },
-    {
-      "name": "Python Decorators",
+      "name": "Python F-String Interpolation Braces",
       "scope": [
-        "meta.function.decorator.python",
-        "entity.name.function.decorator.python",
-        "meta.decorator.python",
-        "punctuation.definition.decorator.python"
+        "punctuation.definition.interpolation.begin.python",
+        "punctuation.definition.interpolation.end.python"
       ],
       "settings": {
-        "foreground": "#d29d72"
+        "foreground": "#D4D4D4",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Python Import Keywords",
-      "scope": ["keyword.control.import.python"],
-      "settings": {
-        "foreground": "#d29d72"
-      }
-    },
-    {
-      "name": "Python Control Flow Keywords",
-      "scope": ["keyword.control.flow.python"],
-      "settings": {
-        "foreground": "#b1535e"
-      }
-    },
-    {
-      "name": "Python Exception Handling Keywords",
+      "name": "Python F-String Expressions",
       "scope": [
-        "keyword.control.try.python",
-        "keyword.control.exception.python",
-        "keyword.control.raise.python"
-      ],
-      "settings": {
-        "foreground": "#b1535e"
-      }
-    },
-    {
-      "name": "Python self/cls/super",
-      "scope": [
-        "variable.language.special.self.python",
-        "variable.language.special.cls.python",
-        "variable.language.special.super.python"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#8fa99c"
-      }
-    },
-    {
-      "name": "Python Special Variables (__name__, __file__, etc.)",
-      "scope": ["variable.language.special.python"],
-      "settings": {
-        "foreground": "#4e6a89"
-      }
-    },
-    {
-      "name": "Python Variables",
-      "scope": [
-        "variable.parameter.python",
-        "variable.other.readwrite.python",
-        "meta.function.parameters.python"
-      ],
-      "settings": {
-        "foreground": "#4e6a89"
-      }
-    },
-    {
-      "name": "Python Type Annotations",
-      "scope": [
-        "meta.annotation.python",
-        "storage.type.annotation.python",
-        "meta.function.parameters.annotation.python"
-      ],
-      "settings": {
-        "foreground": "#cfd8e3"
-      }
-    },
-    {
-      "name": "Python f-string Interpolation",
-      "scope": [
+        "meta.fstring.python",
         "meta.interpolation.python",
-        "punctuation.section.interpolation.begin.python",
-        "punctuation.section.interpolation.end.python"
+        "variable.python"
       ],
       "settings": {
-        "foreground": "#d29d72"
+        "foreground": "#9CDCFE"
       }
     },
     {
-      "name": "Python Docstrings",
-      "scope": [
-        "string.quoted.docstring.multi.python",
-        "string.quoted.docstring.single.python"
-      ],
+      "name": "Python Numbers",
+      "scope": "constant.numeric.python",
       "settings": {
-        "foreground": "#a5c6d4"
+        "foreground": "#B5CEA8"
       }
     },
     {
       "name": "Python Comments",
-      "scope": ["comment.line.number-sign.python"],
+      "scope": "comment.line.number-sign.python",
       "settings": {
-        "foreground": "#5c6470"
+        "foreground": "#6A9955",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "Python Source",
-      "scope": ["source.python"],
+      "name": "Python Docstrings",
+      "scope": "string.quoted.docstring.python",
       "settings": {
-        "foreground": "#4e6a89"
+        "foreground": "#608B4E",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Python Built-in Functions & Types",
+      "scope": ["support.function.builtin.python", "support.type.python"],
+      "settings": {
+        "foreground": "#569CD6"
+      }
+    },
+    {
+      "name": "Python Self/Cls Parameter",
+      "scope": [
+        "variable.language.special.self.python",
+        "variable.language.special.cls.python"
+      ],
+      "settings": {
+        "foreground": "#4EC9B0",
+        "fontStyle": "italic"
       }
     }
   ]
